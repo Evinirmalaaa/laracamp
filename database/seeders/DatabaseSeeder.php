@@ -14,6 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // \App\Models\User::factory(10)->creat
+        $this->call([
+            CampTableSeeder::class,
+            CampBenefitTableSeeder::class,
+            AdminUserSeeder::class,
+        ]);
     }
 }
